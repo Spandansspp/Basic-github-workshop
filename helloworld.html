@@ -1,6 +1,100 @@
 <html>
 <h1>Helloworld</h1>
 <p>\
-  Apple, ball, cat, dog, elephant, fire,goat,hitman
+  Apple, ball, cat, dog, elephant, fire,goat,hitman.
+</p>
+<p>
+  lisp interpreter based
+  rean - eval
+
+  BASIC TERMS
+
+  qoute()- dispalys content between braces (auto capitalize) --->> can also be written after single quotation '.
+  list() - lists all the values between braces
+  eval() - used for calculation
+
+  ---------------------------------------------------------------
+  |NOTE: hitting enter on previous code auto rewrites that code |
+  ---------------------------------------------------------------
+  setq [variable] [Value/(read)] - assigns valut to a variable.
+  	Example: setq a 5
+  		 5
+  		 + a 5
+  		 10
+
+  car - used to print first element of the list(upper case letters) -->> also written as first.
+  	() - all elements inside braces are considered as single
+
+  cdr - prints all elements of list except first -->> cdr=rest
+
+  cons - merges first element with rest of th elements.
+
+  append - merge two or more lists into a single list.
+
+  last - displays last element of the list.(upper case)
+
+  member - lists all elements after a certain element in the list if that is present in the list.
+  	Example: member 't '(p a t t e r n)
+  		(T T E R N)
+
+  reverse - diaplays the elements of the list in reverse order
+  	Example:  reverse '(a s d fg )
+  		(FG D S A)
+
+  length - displays the total number of elements in a list
+  	Example: length '(a b c)
+  		3
+  defun [function_name()] - creates a function
+  	Example: (defun sq() (princ " Enter a no. ")
+                  (setq r (read))
+                  (princ ( * r r))
+                  )
+  	=>	SQ
+
+  		(sq)
+  		Enter a no. 2
+  		4
+  		4
+
+  (Q.1)
+  (defun avg() (princ "Enter three nos.: ")
+             (setq a (read))
+             (setq b (read))
+             (setq c (read))
+             (setq sum (+ a b c))
+             ( / sum 3)
+  )
+
+  (avg)
+  Enter three nos.: 123 14 323
+  460/3
+
+
+  (Q.2)
+  (defun rectangle() (princ "Enter length and breadth:")
+                   (setq l (read))
+                   (setq b (read))
+                   (setq sum (+ l b))
+                   (princ (* l b))
+                   (* 2 sum)
+  )
+
+
+  Enter length and breadth:12 2
+  24
+  28
+
+
+  (Q.3)
+   (defun sq() (princ "Enter length:")
+                   (setq l (read))
+                   (princ (* l l))
+                   (* 4 l)
+                   )
+
+  (sq)
+  Enter length:6
+  36
+  24
 </p>
 </html>
